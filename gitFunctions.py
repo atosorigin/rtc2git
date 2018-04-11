@@ -340,7 +340,10 @@ class Commiter:
 class Differ:
     @staticmethod
     def has_diff():
-        return shell.execute("git diff --quiet") is 1
+        """
+        Check if there would be committed any changes
+        """
+        return shell.execute("git diff --quiet && git ls-files --other --exclude-standard | sed q1 >/dev/null") is 1
 
 
 class ExtensionFilter:
