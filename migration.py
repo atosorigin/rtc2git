@@ -45,7 +45,7 @@ def resume():
         prepare()
     else:
         Commiter.branch(config.streamname)
-        WorkspaceHandler().load()
+        #WorkspaceHandler().load()
 
 
 def existsrepo():
