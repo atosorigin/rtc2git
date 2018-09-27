@@ -33,6 +33,7 @@ while [ $# -gt 0 ]; do
             echo >&2 "unit: install systemd unit and timer (but keep disabled)"
             echo >&2 "timer: enable timer"
             echo >&2 "help: show this"
+            exit 0
             ;;
         *)
             echo >&2 "Unknown switch $1"'!'
