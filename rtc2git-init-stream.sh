@@ -114,7 +114,7 @@ ${USE_EXISTSING_WORKSPACE}
 WorkspaceName= ${MIGRATE_WSP}
 Directory = ${PWD}/${MIGRATE_DIR}
 
-ScmCommand = lscm
+ScmCommand = $(which lscm)
 
 [Migration]
 StreamToMigrate = ${STREAM}
