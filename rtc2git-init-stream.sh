@@ -79,7 +79,7 @@ MIGRATE_WSP=${RTC_USERNAME}${WS_PREFIX}_migrate_${STREAM}
 
 if [ "$SAVED" ]; then
     RTC_CONNECTION="--repository-uri ${MIGRATE_REP}"
-    RTC2GIT_CREDS="--saved"
+    RTC2GIT_CREDS="-s"
 else
     RTC_CONNECTION="--username ${RTC_USERNAME} --password ${RTC_PASSWORD} --repository-uri ${MIGRATE_REP}"
     RTC2GIT_CREDS="--user ${RTC_USERNAME} --password ${RTC_PASSWORD}"
